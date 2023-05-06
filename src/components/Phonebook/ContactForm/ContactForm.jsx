@@ -71,7 +71,7 @@ const ContactForm = () => {
             onChange={handleChange}
           />
         </label>
-        <button className={css.btn} type="button">
+        <button className={css.btn} type="sabmit">
           Add contact
         </button>
       </form>
