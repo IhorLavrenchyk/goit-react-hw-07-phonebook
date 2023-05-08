@@ -1,22 +1,18 @@
-import Phonebook from 'components/Phonebook/Phonebook';
-import { Provider } from 'react-redux';
-import { store } from 'redux/store';
+import ContactForm from './ContactForm/ContactForm';
+import ContactList from './ContactList/ContactList';
+import Filter from './Filter/Filter';
+import css from './app.module.css';
 
-export const App = () => {
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      <Provider store={store}>
-        <Phonebook />
-      </Provider>
+    <div className={css.container}>
+      <h1 className={css.title}>Phonebook</h1>
+      <ContactForm />
+      <h2 className={css.subtitle}>Contacts</h2>
+      <Filter />
+      <ContactList />
     </div>
   );
 };
+
+export default App;

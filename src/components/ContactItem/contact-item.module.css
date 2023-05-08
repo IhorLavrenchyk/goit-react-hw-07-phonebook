@@ -1,0 +1,30 @@
+.contactItem {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactItem__text {
+  font-size: 18px;
+  font-weight: bold;
+}
+.contactItem__button {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid blue;
+  background-color: yellow;
+}
+.contactItem__button :hover,
+.contactItem__button :focus {
+  border: 3px solid rgb(255, 255, 0);
+  background-color: rgb(0, 0, 255);
+  color: rgb(255, 255, 0);
+}
